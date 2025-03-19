@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		<meta name="description" content="Агентство для создания незабываемых событий и эффективного продвижения. Организация вечеринок, PR сопровождение для ресторанов, салонов красоты и брендов одежды, работа с инфлюенсерами. Свяжитесь с нами по телефону +7(965)363-69-20 чтобы обсудить свой проект." />
 		<link rel="icon" href="assets/images/favicon.svg" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="Kirich Production" />
@@ -47,20 +48,65 @@
 		</script>
 		<style type="text/tailwindcss">
 			@layer base {
+				/*@font-face {*/
+				/*	font-family: 'Neue Haas Unica';*/
+				/*	font-weight: 500;*/
+				/*	src: url(assets/fonts/NeueHaasUnica-Medium.woff2) format('woff2');*/
+				/*}*/
+				/*@font-face {*/
+				/*	font-family: 'FreeSans';*/
+				/*	font-weight: 400;*/
+				/*	src: url(assets/fonts/FreeSans.ttf) format('truetype');*/
+				/*}*/
+				/*@font-face {*/
+				/*	font-family: 'FreeSans';*/
+				/*	font-weight: 700;*/
+				/*	src: url(assets/fonts/FreeSansBold.ttf) format('truetype');*/
+				/*}*/
+				html {
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					text-size-adjust: 100%;
+				}
+
+				body {
+					text-rendering: optimizeLegibility;
+					font-feature-settings: 'kern' 1;
+				}
 				@font-face {
 					font-family: 'Neue Haas Unica';
+					src: url(assets/fonts/NeueHaasUnica-Medium.eot);
+					src: url(assets/fonts/NeueHaasUnica-Medium.eot?#iefix) format('embedded-opentype'),
+					url(assets/fonts/NeueHaasUnica-Medium.woff2) format('woff2'),
+					url(assets/fonts/NeueHaasUnica-Medium.woff) format('woff'),
+					url(assets/fonts/NeueHaasUnica-Medium.ttf) format('truetype');
 					font-weight: 500;
-					src: url(assets/fonts/NeueHaasUnica-Medium.woff2) format('woff2');
+					font-style: normal;
+					font-display: swap;
 				}
+
 				@font-face {
 					font-family: 'FreeSans';
-					font-weight: 400;
-					src: url(assets/fonts/FreeSans.ttf) format('truetype');
+					src: url(assets/fonts/FreeSansBold.eot);
+					src: url(assets/fonts/FreeSansBold.eot?#iefix) format('embedded-opentype'),
+					url(assets/fonts/FreeSansBold.woff2) format('woff2'),
+					url(assets/fonts/FreeSansBold.woff) format('woff'),
+					url(assets/fonts/FreeSansBold.ttf) format('truetype');
+					font-weight: bold;
+					font-style: normal;
+					font-display: swap;
 				}
+
 				@font-face {
 					font-family: 'FreeSans';
-					font-weight: 700;
-					src: url(assets/fonts/FreeSansBold.ttf) format('truetype');
+					src: url(assets/fonts/FreeSans.eot);
+					src: url(assets/fonts/FreeSans.eot?#iefix) format('embedded-opentype'),
+					url(assets/fonts/FreeSans.woff2) format('woff2'),
+					url(assets/fonts/FreeSans.woff) format('woff'),
+					url(assets/fonts/FreeSans.ttf) format('truetype');
+					font-weight: normal;
+					font-style: normal;
+					font-display: swap;
 				}
 			}
 		</style>
@@ -840,5 +886,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@6.0.1/dist/vanilla/simpleParallaxVanilla.umd.min.js"></script>
 		<script src="modules/parallaxEffect.js"></script>
 		<script src="modules/spotlight.js"></script>
+
+
 	</body>
 </html>
