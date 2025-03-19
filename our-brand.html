@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="description" content="Агентство для создания незабываемых событий и эффективного продвижения. Организация вечеринок, PR сопровождение для ресторанов, салонов красоты и брендов одежды, работа с инфлюенсерами. Свяжитесь с нами по телефону +7(965)363-69-20 чтобы обсудить свой проект." />
+		<link rel="icon" href="assets/images/favicon.svg" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Kirich Production" />
+		<meta name="twitter:description" content="Агентство для создания незабываемых событий и эффективного продвижения. Организация вечеринок, PR сопровождение для ресторанов, салонов красоты и брендов одежды, работа с инфлюенсерами. Свяжитесь с нами по телефону +7(965)363-69-20 чтобы обсудить свой проект." />
+		<meta name="twitter:image" content="assets/images/og-image.jpg" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://kirichproduction.com" />
+		<meta property="og:title" content="Kirich Production" />
+		<meta property="og:description" content="Агентство для создания незабываемых событий и эффективного продвижения. Организация вечеринок, PR сопровождение для ресторанов, салонов красоты и брендов одежды, работа с инфлюенсерами. Свяжитесь с нами по телефону +7(965)363-69-20 чтобы обсудить свой проект." />
+		<meta property="og:image" content="assets/images/og-image.jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						keyframes: {
+							'marquee-to-left': {
+								'0%': { transform: 'translateX(0)' },
+								'100%': { transform: 'translateX(-50%)' }
+							},
+							'marquee-to-right': {
+								'0%': { transform: 'translateX(-50%)' },
+								'100%': { transform: 'translateX(0)' }
+							}
+						},
+						animation: {
+							'marquee-to-left': 'marquee-to-left 40s linear infinite',
+							'marquee-to-right': 'marquee-to-right 40s linear infinite'
+						}
+					},
+					container: {
+						center: true
+					}
+				}
+			};
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				@font-face {
+					font-family: 'Neue Haas Unica';
+					font-weight: 500;
+					src: url(assets/fonts/NeueHaasUnica-Medium.woff2) format('woff2');
+				}
+				@font-face {
+					font-family: 'FreeSans';
+					font-weight: 400;
+					src: url(assets/fonts/FreeSans.ttf) format('truetype');
+				}
+				@font-face {
+					font-family: 'FreeSans';
+					font-weight: 700;
+					src: url(assets/fonts/FreeSansBold.ttf) format('truetype');
+				}
+			}
+		</style>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<title>Наш бренд • Kirich</title>
+	</head>
+	<body class="relative flex h-screen flex-col overflow-x-hidden bg-black font-['Neue_Haas_Unica'] font-medium uppercase leading-tight -tracking-[2%]">
+		<!-- header -->
+		<header class="fixed left-0 top-0 z-30 w-full py-6 text-white mix-blend-difference">
+			<div class="flex justify-between px-4 2xl:container xl:px-5">
+				<div class="flex gap-x-[72px]">
+					<a class="group h-5 overflow-y-hidden text-sm" href="index.html" data-aos="fade">
+						<span class="block duration-300 md:group-hover:-translate-y-1/2">
+							<span>Kirich</span>
+							<br />
+							<span class="max-md:hidden">Kirich</span>
+						</span>
+					</a>
+					<p class="min-w-[490px] text-sm max-xl:hidden" data-aos="fade" data-aos-delay="100">FW collection DROP / <span class="detailedCountdown">0 дней, 0 часов, 0 минут, 0 секунд</span></p>
+				</div>
+				<button class="burger text-sm uppercase xl:hidden" data-aos="fade" data-aos-delay="100">Меню</button>
+				<nav class="flex gap-x-6 text-sm max-xl:hidden">
+					<a class="group h-5 overflow-y-hidden text-sm" href="company.html" data-aos="fade" data-aos-delay="200">
+						<span class="block duration-300 md:group-hover:-translate-y-1/2">
+							<span>Компания</span>
+							<br />
+							<span class="max-md:hidden">Компания</span>
+						</span>
+					</a>
+					<a class="group h-5 overflow-y-hidden text-sm" href="services.html" data-aos="fade" data-aos-delay="300">
+						<span class="block duration-300 md:group-hover:-translate-y-1/2">
+							<span>Услуги</span>
+							<br />
+							<span class="max-md:hidden">Услуги</span>
+						</span>
+					</a>
+					<a class="group h-5 overflow-y-hidden text-sm" href="cases.html" data-aos="fade" data-aos-delay="400">
+						<span class="block duration-300 md:group-hover:-translate-y-1/2">
+							<span>Кейсы</span>
+							<br />
+							<span class="max-md:hidden">Кейсы</span>
+						</span>
+					</a>
+					<a class="group h-5 overflow-y-hidden text-sm" href="our-brand.html" data-aos="fade" data-aos-delay="500">
+						<span class="block opacity-50 duration-300 md:group-hover:-translate-y-1/2">
+							<span>Наш бренд</span>
+							<br />
+							<span class="max-md:hidden">Наш бренд</span>
+						</span>
+					</a>
+					<a class="group h-5 overflow-y-hidden text-sm" href="#contacts" data-aos="fade" data-aos-delay="600">
+						<span class="block duration-300 md:group-hover:-translate-y-1/2">
+							<span>Контакты</span>
+							<br />
+							<span class="max-md:hidden">Контакты</span>
+						</span>
+					</a>
+					<a class="group ml-3 flex w-max shrink-0 gap-x-1 text-nowrap border-b text-sm max-xl:hidden" href="https://wa.me/79653636920" data-aos="fade" data-aos-delay="700">
+						<p class="h-5 shrink-0 overflow-y-hidden">
+							<span class="block duration-300 md:group-hover:-translate-y-1/2">
+								<span>Обсудить проект</span>
+								<br />
+								<span class="max-md:hidden">Обсудить проект</span>
+							</span>
+						</p>
+						<img class="size-[18px]" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					</a>
+				</nav>
+			</div>
+		</header>
+		<div class="menu fixed -top-[100dvh] left-0 z-20 flex h-dvh w-screen flex-col gap-y-12 overflow-y-auto bg-black px-4 pb-11 pt-[90px] text-white duration-700">
+			<nav class="my-auto flex w-full flex-col gap-y-1 self-center text-[50px]">
+				<a href="index.html">Главная</a>
+				<a href="company.html">Компания</a>
+				<a href="services.html">Услуги</a>
+				<a href="cases.html">Кейсы</a>
+				<a href="#contacts">Контакты</a>
+				<a href="our-brand.html">Наш бренд</a>
+			</nav>
+			<div class="mb-0 mt-auto flex w-full flex-wrap justify-between gap-x-3 gap-y-4">
+				<a class="flex w-max shrink-0 items-center gap-x-1 text-nowrap border-b bg-white pl-1 pr-1.5 text-sm text-black" href="https://wa.me/79653636920">
+					<span class="mt-0.5">Обсудить проект</span>
+					<img class="size-[18px] invert" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+				</a>
+				<a class="flex w-max shrink-0 gap-x-1 text-nowrap border-b text-sm" href="https://wa.me/79653636920">
+					<span>Связаться с нами</span>
+					<img class="size-[18px]" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+				</a>
+			</div>
+		</div>
+
+		<!-- Background image -->
+		<img class="absolute bottom-0 min-h-[462px] w-full max-w-[675px] self-center object-cover" src="assets/images/our-brand-bg.png" alt="" />
+
+		<!--  -->
+		<form id="earlyAccessForm" novalidate class="absolute top-[44vh] flex w-full flex-col self-center px-4 text-sm 2xl:container lg:top-[46.5dvh] lg:max-w-[458px]">
+			<div class="relative mb-4 flex w-full items-center gap-y-4 lg:mb-6" data-aos="fade">
+				<input class="w-full border-[1.5px] border-white bg-transparent py-5 pl-4 pr-[50px] text-sm text-[#AAAAAC] placeholder-[#AAAAAC] duration-300 focus:outline-none" placeholder="ВАШ EMAIL" type="email" id="email" />
+				<button class="absolute right-4" type="submit">
+					<img class="size-[18px] rotate-45" src="assets/images/arrow-outward.svg" alt="" />
+				</button>
+			</div>
+			<label class="mb-12 text-white lg:mb-6" for="email" data-aos="fade" data-aos-delay="100">Зарегистрируйтесь <span class="whitespace-nowrap">для получения</span> раннего доступа <span class="whitespace-nowrap">к «FW collection DROP»</span></label>
+			<p class="self-end text-[#AAAAAC]" data-aos="fade" data-aos-delay="200">Coming soon...</p>
+		</form>
+
+		<script src="modules/burgerMenu.js"></script>
+		<script src="modules/countdown.js"></script>
+		<script src="modules/earlyAccessForm.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({ offset: 60 });
+		</script>
+	</body>
+</html>

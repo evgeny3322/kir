@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="description" content="Агентство для создания незабываемых событий и эффективного продвижения. Организация вечеринок, PR сопровождение для ресторанов, салонов красоты и брендов одежды, работа с инфлюенсерами. Свяжитесь с нами по телефону +7(965)363-69-20 чтобы обсудить свой проект." />
+		<link rel="icon" href="assets/images/favicon.svg" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Kirich Production" />
+		<meta name="twitter:description" content="Агентство для создания незабываемых событий и эффективного продвижения. Организация вечеринок, PR сопровождение для ресторанов, салонов красоты и брендов одежды, работа с инфлюенсерами. Свяжитесь с нами по телефону +7(965)363-69-20 чтобы обсудить свой проект." />
+		<meta name="twitter:image" content="assets/images/og-image.jpg" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://kirichproduction.com" />
+		<meta property="og:title" content="Kirich Production" />
+		<meta property="og:description" content="Агентство для создания незабываемых событий и эффективного продвижения. Организация вечеринок, PR сопровождение для ресторанов, салонов красоты и брендов одежды, работа с инфлюенсерами. Свяжитесь с нами по телефону +7(965)363-69-20 чтобы обсудить свой проект." />
+		<meta property="og:image" content="assets/images/og-image.jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						keyframes: {
+							'marquee-to-left': {
+								'0%': { transform: 'translateX(0)' },
+								'100%': { transform: 'translateX(-50%)' }
+							},
+							'marquee-to-right': {
+								'0%': { transform: 'translateX(-50%)' },
+								'100%': { transform: 'translateX(0)' }
+							}
+						},
+						animation: {
+							'marquee-to-left': 'marquee-to-left 40s linear infinite',
+							'marquee-to-right': 'marquee-to-right 40s linear infinite'
+						}
+					},
+					container: {
+						center: true
+					}
+				}
+			};
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				@font-face {
+					font-family: 'Neue Haas Unica';
+					font-weight: 500;
+					src: url(assets/fonts/NeueHaasUnica-Medium.woff2) format('woff2');
+				}
+				@font-face {
+					font-family: 'FreeSans';
+					font-weight: 400;
+					src: url(assets/fonts/FreeSans.ttf) format('truetype');
+				}
+				@font-face {
+					font-family: 'FreeSans';
+					font-weight: 700;
+					src: url(assets/fonts/FreeSansBold.ttf) format('truetype');
+				}
+			}
+		</style>
+		<style>
+			.active-footer {
+				animation-name: active-right;
+				animation-duration: 10s;
+				animation-iteration-count: infinite;
+				animation-timing-function: ease-in-out;
+				animation-fill-mode: both;
+			}
+			@keyframes active-right {
+				0% {
+					transform: translateX(-15%);
+				}
+				100% {
+					transform: translateX(155%);
+				}
+			}
+			.active-left {
+				animation-name: active-left;
+				animation-duration: 10s;
+				animation-iteration-count: infinite;
+				animation-timing-function: ease-in-out;
+				animation-fill-mode: both;
+			}
+
+			@keyframes active-left {
+				0% {
+					transform: translateX(5%);
+				}
+				100% {
+					transform: translateX(-190%);
+				}
+			}
+		</style>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<title>Компания • Kirich</title>
+	</head>
+	<body class="overflow-x-hidden bg-white font-['Neue_Haas_Unica'] font-medium uppercase leading-tight -tracking-[2%]">
+		<!-- header -->
+		<header class="fixed left-0 top-0 z-30 w-full py-6 text-white mix-blend-difference">
+			<div class="flex justify-between px-4 2xl:container xl:px-5">
+				<div class="flex gap-x-[72px]">
+					<a class="group h-5 overflow-y-hidden text-sm" href="index.html" data-aos="fade">
+						<span class="block duration-300 md:group-hover:-translate-y-1/2">
+							<span>Kirich</span>
+							<br />
+							<span class="max-md:hidden">Kirich</span>
+						</span>
+					</a>
+					<p class="min-w-[490px] text-sm max-xl:hidden" data-aos="fade" data-aos-delay="100">FW collection DROP / <span class="detailedCountdown">0 дней, 0 часов, 0 минут, 0 секунд</span></p>
+				</div>
+				<button class="burger text-sm uppercase xl:hidden" data-aos="fade" data-aos-delay="100">Меню</button>
+				<nav class="flex gap-x-6 text-sm max-xl:hidden">
+					<a class="group h-5 overflow-y-hidden text-sm" href="company.html" data-aos="fade" data-aos-delay="200">
+						<span class="block opacity-50 duration-300 md:group-hover:-translate-y-1/2">
+							<span>Компания</span>
+							<br />
+							<span class="max-md:hidden">Компания</span>
+						</span>
+					</a>
+					<a class="group h-5 overflow-y-hidden text-sm" href="services.html" data-aos="fade" data-aos-delay="300">
+						<span class="block duration-300 md:group-hover:-translate-y-1/2">
+							<span>Услуги</span>
+							<br />
+							<span class="max-md:hidden">Услуги</span>
+						</span>
+					</a>
+					<a class="group h-5 overflow-y-hidden text-sm" href="cases.html" data-aos="fade" data-aos-delay="400">
+						<span class="block duration-300 md:group-hover:-translate-y-1/2">
+							<span>Кейсы</span>
+							<br />
+							<span class="max-md:hidden">Кейсы</span>
+						</span>
+					</a>
+					<a class="group h-5 overflow-y-hidden text-sm" href="our-brand.html" data-aos="fade" data-aos-delay="500">
+						<span class="block duration-300 md:group-hover:-translate-y-1/2">
+							<span>Наш бренд</span>
+							<br />
+							<span class="max-md:hidden">Наш бренд</span>
+						</span>
+					</a>
+					<a class="group h-5 overflow-y-hidden text-sm" href="#contacts" data-aos="fade" data-aos-delay="600">
+						<span class="block duration-300 md:group-hover:-translate-y-1/2">
+							<span>Контакты</span>
+							<br />
+							<span class="max-md:hidden">Контакты</span>
+						</span>
+					</a>
+					<a class="group ml-3 flex w-max shrink-0 gap-x-1 text-nowrap border-b text-sm max-xl:hidden" href="https://wa.me/79653636920" data-aos="fade" data-aos-delay="700">
+						<p class="h-5 shrink-0 overflow-y-hidden">
+							<span class="block duration-300 md:group-hover:-translate-y-1/2">
+								<span>Обсудить проект</span>
+								<br />
+								<span class="max-md:hidden">Обсудить проект</span>
+							</span>
+						</p>
+						<img class="size-[18px]" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					</a>
+				</nav>
+			</div>
+		</header>
+		<div class="menu fixed -top-[100dvh] left-0 z-20 flex h-dvh w-screen flex-col gap-y-12 overflow-y-auto bg-black px-4 pb-11 pt-[90px] text-white duration-700">
+			<nav class="my-auto flex w-full flex-col gap-y-1 self-center text-[50px]">
+				<a href="index.html">Главная</a>
+				<a href="company.html">Компания</a>
+				<a href="services.html">Услуги</a>
+				<a href="cases.html">Кейсы</a>
+				<a href="#contacts">Контакты</a>
+				<a href="our-brand.html">Наш бренд</a>
+			</nav>
+			<div class="mb-0 mt-auto flex w-full flex-wrap justify-between gap-x-3 gap-y-4">
+				<a class="flex w-max shrink-0 items-center gap-x-1 text-nowrap border-b bg-white pl-1 pr-1.5 text-sm text-black" href="https://wa.me/79653636920">
+					<span class="mt-0.5">Обсудить проект</span>
+					<img class="size-[18px] invert" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+				</a>
+				<a class="flex w-max shrink-0 gap-x-1 text-nowrap border-b text-sm" href="https://wa.me/79653636920">
+					<span>Связаться с нами</span>
+					<img class="size-[18px]" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+				</a>
+			</div>
+		</div>
+
+		<!-- About company / Hero -->
+		<div class="relative mb-[60px] flex h-dvh text-white xl:mb-[100px]">
+			<div class="relative z-10 mb-9 mt-auto flex flex-col px-4 2xl:container max-xl:mb-10 xl:mb-10 xl:px-5" data-aos="fade" data-aos-delay="200">
+				<h1 class="mb-3 text-[14px] leading-none text-[#898989] xl:mb-8 xl:text-[22px] xl:text-white/85">О компании</h1>
+				<p class="mb-9 text-[19px]/[1.15] tracking-normal xl:mb-7 xl:text-[54px]">Kirich Production— динамичное агентство, которое уже 5 лет создаёт незабываемые впечатления и помогает брендам сиять!</p>
+				<div class="flex flex-wrap gap-3">
+					<a class="group flex size-max shrink-0 items-center gap-x-1 text-nowrap bg-white pl-1 pr-1.5 text-sm uppercase text-black duration-300 xl:hover:bg-black xl:hover:text-white" href="https://wa.me/79653636920">
+						<span class="mt-0.5">Обсудить проект</span>
+						<svg class="fill-black duration-300 xl:group-hover:fill-white" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4.8 13.5005L3.75 12.4505L10.95 5.25049H4.5V3.75049H13.5V12.7505H12V6.30049L4.8 13.5005Z" />
+						</svg>
+					</a>
+					<a class="group flex w-max shrink-0 gap-x-1 text-nowrap border-b text-sm" href="https://wa.me/79653636920" data-aos="fade">
+						<p class="h-5 shrink-0 overflow-y-hidden">
+							<span class="block duration-300 md:group-hover:-translate-y-1/2">
+								<span>Связаться с нами</span>
+								<br />
+								<span class="max-md:hidden">Связаться с нами</span>
+							</span>
+						</p>
+						<img class="size-[18px]" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					</a>
+				</div>
+			</div>
+
+			<video autoplay muted playsinline loop class="absolute left-0 top-0 h-full w-full object-cover object-center">
+				<source src="assets/videos/party.mp4" type="video/mp4" />
+			</video>
+		</div>
+
+		<!-- About us / Cards -->
+		<section class="mb-[60px] px-4 2xl:container xl:mb-[120px] xl:px-5">
+			<div class="mb-10 flex justify-between gap-y-6 max-xl:flex-col xl:mb-[60px]">
+				<h2 class="text-[12px] text-black/45 max-xl:self-end xl:text-[22px]" data-aos="fade">О нас</h2>
+				<div class="xl:max-w-[933px]">
+					<p class="mb-4 text-[24px] leading-[1.2] xl:mb-5 xl:text-[40px]" data-aos="fade">Мы объединяем креатив, стратегию и силу социальных сетей, чтобы ваши мероприятия были не просто событиями, а настоящими феноменами</p>
+					<p class="mb-10 font-normal normal-case text-black/75 xl:mb-9 xl:text-[20px]">
+						За время нашего существования мы зарекомендовали себя как надёжный партнёр, который понимает потребности клиентов и умеет находить креативные решения. Наша команда — это талантливые профессионалы, которые живут и дышат идеями. Мы знаем, как сделать ваш бренд заметным
+						<span class="whitespace-nowrap">в мире,</span> где внимание — это валюта.
+					</p>
+					<div class="flex flex-wrap gap-6">
+						<a class="group flex w-max shrink-0 gap-x-1 text-nowrap border-b border-b-black text-sm" href="services.html" data-aos="fade">
+							<p class="h-5 shrink-0 overflow-y-hidden">
+								<span class="block duration-300 md:group-hover:-translate-y-1/2">
+									<span>Наши услуги</span>
+									<br />
+									<span class="max-md:hidden">Наши услуги</span>
+								</span>
+							</p>
+							<img class="size-[18px] rotate-90 invert" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+						</a>
+						<a class="group flex size-max shrink-0 items-center gap-x-1 text-nowrap bg-black pl-1 pr-1.5 text-sm uppercase text-white duration-300 xl:hover:bg-white xl:hover:text-black" href="https://wa.me/79653636920">
+							<span class="mt-0.5">Обсудить проект</span>
+							<svg class="fill-white duration-300 xl:group-hover:fill-black" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4.8 13.5005L3.75 12.4505L10.95 5.25049H4.5V3.75049H13.5V12.7505H12V6.30049L4.8 13.5005Z" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="mb-6 grid gap-4 text-white *:relative *:flex *:h-[174px] *:items-center *:justify-center *:overflow-clip md:grid-cols-2 xl:mb-10 xl:grid-cols-4 xl:gap-2.5 xl:*:h-[342px]">
+				<a class="group xl:order-1" href="/services.html#for-bloggers" data-aos="fade">
+					<span class="absolute z-[1] size-full bg-black/70 duration-500 group-hover:scale-105"></span>
+					<img class="absolute size-full object-cover object-center duration-500 xl:object-top xl:group-hover:scale-105" src="assets/images/abstral-official-fLjktqPB_94-unsplash.jpg" alt="" />
+					<p class="relative z-10">Для Блогеров</p>
+					<img class="absolute left-4 top-4 z-10 size-[18px] -rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute right-4 top-4 z-10 size-[18px]" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 right-4 z-10 size-[18px] rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 left-4 z-10 size-[18px] rotate-180" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+				</a>
+				<a class="group xl:order-2" href="/services.html#for-partners" data-aos="fade">
+					<span class="absolute z-[1] size-full bg-black/70 duration-500 group-hover:scale-105"></span>
+					<img class="absolute size-full object-cover object-center duration-500 xl:group-hover:scale-105" src="assets/images/daniel-nJGvlWsLgGc-unsplash.jpg" alt="" />
+					<p class="relative z-10">Для Партнеров</p>
+					<img class="absolute left-4 top-4 z-10 size-[18px] -rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute right-4 top-4 z-10 size-[18px]" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 right-4 z-10 size-[18px] rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 left-4 z-10 size-[18px] rotate-180" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+				</a>
+				<a class="group" href="/services.html#events" data-aos="fade">
+					<span class="absolute z-[1] size-full bg-black/70 duration-500 group-hover:scale-105 xl:bg-black/75"></span>
+					<img class="absolute size-full scale-[1.7] object-cover object-center duration-500 xl:group-hover:scale-[1.75] min-[1366px]:object-[68px_-38px]" src="assets/images/IMG_4401.jpg" alt="" />
+					<p class="relative z-10">Мероприятия</p>
+					<img class="absolute left-4 top-4 z-10 size-[18px] -rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute right-4 top-4 z-10 size-[18px]" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 right-4 z-10 size-[18px] rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 left-4 z-10 size-[18px] rotate-180" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+				</a>
+				<a class="group" href="/services.html#smm-unit" data-aos="fade">
+					<span class="absolute z-[1] size-full bg-black/60 duration-500 group-hover:scale-105 xl:bg-black/75"></span>
+					<img class="absolute size-full object-cover object-center duration-500 xl:object-top xl:opacity-75 xl:group-hover:scale-105" src="assets/images/dadang-kurniawan-2ioOJk4s64Y-unsplash.jpg" alt="" />
+					<p class="relative z-10">SMM Юнит</p>
+					<img class="absolute left-4 top-4 z-10 size-[18px] -rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute right-4 top-4 z-10 size-[18px]" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 right-4 z-10 size-[18px] rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 left-4 z-10 size-[18px] rotate-180" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+				</a>
+				<a class="group" href="/services.html#production" data-aos="fade">
+					<span class="absolute z-[1] size-full bg-black/30 duration-500 group-hover:scale-105 xl:bg-black/70"></span>
+					<img class="absolute size-full object-cover object-center duration-500 xl:hidden" src="assets/images/hamza-nouasria-gcwXPOeA0ac-unsplash.jpg" alt="" />
+					<img class="absolute size-full object-cover object-center duration-500 max-xl:hidden xl:group-hover:scale-105" src="assets/images/strvnge-films-HsdYDAFlSv8-unsplash.jpg" alt="" />
+					<p class="relative z-10">Production</p>
+					<img class="absolute left-4 top-4 z-10 size-[18px] -rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute right-4 top-4 z-10 size-[18px]" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 right-4 z-10 size-[18px] rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 left-4 z-10 size-[18px] rotate-180" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+				</a>
+				<a class="group" href="/services.html#pr" data-aos="fade">
+					<span class="absolute z-[1] size-full bg-black/60 duration-500 group-hover:scale-105 xl:bg-black/20"></span>
+					<img class="absolute size-full object-cover object-center duration-500 xl:group-hover:scale-105" src="assets/images/aleksandr-popov-SbPUMwGYzLo-unsplash.jpg" alt="" />
+					<p class="relative z-10">PR</p>
+					<img class="absolute left-4 top-4 z-10 size-[18px] -rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute right-4 top-4 z-10 size-[18px]" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 right-4 z-10 size-[18px] rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 left-4 z-10 size-[18px] rotate-180" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+				</a>
+				<a class="group" href="/services.html#influence-marketing" data-aos="fade">
+					<span class="absolute z-[1] size-full bg-black/70 duration-500 group-hover:scale-105 xl:bg-black/50"></span>
+					<img class="absolute size-full object-cover object-center duration-500 xl:hidden" src="assets/images/gerardo-marrufo-SqEcTKONl4g-unsplash.jpg" alt="" />
+					<img class="absolute size-full object-cover object-center opacity-75 duration-500 max-xl:hidden xl:group-hover:scale-105" src="assets/images/hamza-nouasria-gcwXPOeA0ac-unsplash.jpg" alt="" />
+					<p class="relative z-10">Influence Marketing</p>
+					<img class="absolute left-4 top-4 z-10 size-[18px] -rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute right-4 top-4 z-10 size-[18px]" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 right-4 z-10 size-[18px] rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 left-4 z-10 size-[18px] rotate-180" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+				</a>
+				<a class="group" href="/services.html#partner-recruitment" data-aos="fade">
+					<span class="absolute z-[1] size-full bg-black/70 duration-500 group-hover:scale-105 xl:bg-black/75"></span>
+					<img class="absolute size-full object-cover object-center duration-500 xl:hidden" src="assets/images/strvnge-films-HsdYDAFlSv8-unsplash.jpg" alt="" />
+					<img class="absolute size-full object-cover object-center duration-500 max-xl:hidden xl:group-hover:scale-105" src="assets/images/gerardo-marrufo-SqEcTKONl4g-unsplash.jpg" alt="" />
+					<p class="relative z-10">Привлечение партнёров</p>
+					<img class="absolute left-4 top-4 z-10 size-[18px] -rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute right-4 top-4 z-10 size-[18px]" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 right-4 z-10 size-[18px] rotate-90" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+					<img class="absolute bottom-4 left-4 z-10 size-[18px] rotate-180" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+				</a>
+			</div>
+			<a class="group flex w-max shrink-0 gap-x-1 text-nowrap border-b border-b-black text-sm xl:ml-[33%]" href="services.html" data-aos="fade">
+				<p class="h-5 shrink-0 overflow-y-hidden">
+					<span class="block duration-300 md:group-hover:-translate-y-1/2">
+						<span>подробнее об услугах</span>
+						<br />
+						<span class="max-md:hidden">подробнее об услугах</span>
+					</span>
+				</p>
+				<img class="size-[18px] invert" src="assets/images/arrow-outward.svg" alt="arrow_outward" />
+			</a>
+		</section>
+
+		<!-- Experts -->
+		<section class="mb-20 space-y-9 overflow-x-clip px-4 2xl:container xl:mb-[153px] xl:px-5">
+			<div class="flex justify-between gap-y-6 max-xl:flex-col">
+				<h2 class="text-[12px] text-black/45 max-xl:self-end xl:text-[22px]" data-aos="fade">Наша команда</h2>
+				<p class="text-[24px] leading-[1.2] xl:max-w-[933px] xl:text-[40px]" data-aos="fade">
+					В Kirich Production мы гордимся нашей командой экспертов, каждый <span class="whitespace-nowrap">из которых</span> вносит уникальный вклад <span class="whitespace-nowrap">в создание</span> незабываемых событий и эффективное продвижение <span class="whitespace-nowrap">для вашего</span> бизнеса
+				</p>
+			</div>
+			<div class="relative space-y-[126px] xl:space-y-[153px]">
+				<div class="">
+					<div class="mb-4 flex flex-col gap-y-3 xl:mb-2">
+						<h3 class="w-max bg-[#F6EECC] pt-1 text-[22px] leading-none" data-aos="fade">Креативные директора</h3>
+						<p class="leading-[1.4] max-xl:text-[14px]" data-aos="fade" data-aos-delay="100">Мастера идеи и концепции. знают, как сделать ваше событие уникальным и запоминающимся</p>
+					</div>
+					<div class="flex grid-cols-4 gap-x-4 *:object-cover xl:grid">
+						<div class="relative size-[180px] shrink-0 xl:h-[340px] xl:w-full" data-aos="fade">
+							<img class="size-full object-cover" src="assets/images/DSC_0440-1.jpg" alt="" />
+							<div class="absolute top-full translate-y-3 space-y-1">
+								<h4 class="max-xl:text-[14px]">Должность</h4>
+								<p class="text-[14px] font-normal normal-case opacity-75 xl:text-[18px]">Екатерина К.</p>
+							</div>
+						</div>
+						<div class="relative h-[293px] w-[208px] shrink-0 xl:h-[479px] xl:w-full" data-aos="fade" data-aos-delay="100">
+							<img class="size-full object-cover" src="assets/images/DSC_0366-1.jpg" alt="" />
+							<div class="absolute top-full translate-y-3 space-y-1">
+								<h4 class="max-xl:text-[14px]">Должность</h4>
+								<p class="text-[14px] font-normal normal-case opacity-75 xl:text-[18px]">Екатерина К.</p>
+							</div>
+						</div>
+						<div class="relative h-[174px] w-[211px] shrink-0 xl:h-[280px] xl:w-full" data-aos="fade" data-aos-delay="200">
+							<img class="size-full object-cover" src="assets/images/SPECTRUM_by_Kirich-1.jpg" alt="" />
+							<div class="absolute top-full translate-y-3 space-y-1">
+								<h4 class="max-xl:text-[14px]">Должность</h4>
+								<p class="text-[14px] font-normal normal-case opacity-75 xl:text-[18px]">Екатерина К.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="mb-4 flex flex-col gap-y-3 xl:mb-2">
+						<h3 class="w-max bg-[#F6EECC] pt-1 text-[22px] leading-none" data-aos="fade">PR-специалисты</h3>
+						<p class="leading-[1.4] max-xl:text-[14px]" data-aos="fade" data-aos-delay="100">Профессионалы своего дела, Они умеют создавать мощные истории, которые привлекают внимание</p>
+					</div>
+					<div class="flex grid-cols-4 gap-x-4 *:object-cover xl:grid">
+						<div class="relative h-[293px] w-[208px] shrink-0 xl:h-[370px] xl:w-full" data-aos="fade">
+							<img class="size-full object-cover" src="assets/images/DSC_0440-2.jpg" alt="" />
+							<div class="absolute top-full translate-y-3 space-y-1">
+								<h4 class="max-xl:text-[14px]">Должность</h4>
+								<p class="text-[14px] font-normal normal-case opacity-75 xl:text-[18px]">Екатерина К.</p>
+							</div>
+						</div>
+						<div class="relative h-[174px] w-[211px] shrink-0 xl:h-[612px] xl:w-full" data-aos="fade" data-aos-delay="100">
+							<img class="size-full object-cover" src="assets/images/DSC_0366-2.jpg" alt="" />
+							<div class="absolute top-full translate-y-3 space-y-1">
+								<h4 class="max-xl:text-[14px]">Должность</h4>
+								<p class="text-[14px] font-normal normal-case opacity-75 xl:text-[18px]">Екатерина К.</p>
+							</div>
+						</div>
+						<div class="relative h-[180px] w-[180px] shrink-0 xl:h-[270px] xl:w-full xl:pl-[119px]" data-aos="fade" data-aos-delay="200">
+							<img class="size-full object-cover" src="assets/images/SPECTRUM_by_Kirich-3.jpg" alt="" />
+							<div class="absolute top-full translate-y-3 space-y-1">
+								<h4 class="max-xl:text-[14px]">Должность</h4>
+								<p class="text-[14px] font-normal normal-case opacity-75 xl:text-[18px]">Екатерина К.</p>
+							</div>
+						</div>
+						<div class="relative h-[178px] w-[136px] shrink-0 xl:h-[442px] xl:w-full" data-aos="fade" data-aos-delay="300">
+							<img class="size-full object-cover" src="assets/images/DSC_2923.jpg" alt="" />
+							<div class="absolute top-full translate-y-3 space-y-1">
+								<h4 class="max-xl:text-[14px]">Должность</h4>
+								<p class="text-[14px] font-normal normal-case opacity-75 xl:text-[18px]">Екатерина К.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="mb-4 flex flex-col gap-y-3 xl:mb-2">
+						<h3 class="w-max bg-[#F6EECC] pt-1 text-[22px] leading-none" data-aos="fade">Маркетологи</h3>
+						<p class="leading-[1.4] max-xl:text-[14px]" data-aos="fade" data-aos-delay="100">Исследуют рынок и аудиторию, чтобы разработать эффективные стратегии продвижения</p>
+					</div>
+					<div class="flex grid-cols-4 gap-x-4 *:object-cover xl:grid">
+						<div class="relative h-[182px] w-[167px] shrink-0 xl:h-[243px] xl:w-full" data-aos="fade">
+							<img class="size-full object-cover" src="assets/images/DSC_0440-1.jpg" alt="" />
+							<div class="absolute top-full translate-y-3 space-y-1">
+								<h4 class="max-xl:text-[14px]">Должность</h4>
+								<p class="text-[14px] font-normal normal-case opacity-75 xl:text-[18px]">Екатерина К.</p>
+							</div>
+						</div>
+						<div class="relative h-[226px] w-[125px] shrink-0 xl:h-[409px] xl:w-full xl:pl-[119px]" data-aos="fade" data-aos-delay="100">
+							<img class="size-full object-cover" src="assets/images/SPECTRUM_by_Kirich-2.jpg" alt="" />
+							<div class="absolute top-full translate-y-3 space-y-1">
+								<h4 class="max-xl:text-[14px]">Должность</h4>
+								<p class="text-[14px] font-normal normal-case opacity-75 xl:text-[18px]">Екатерина К.</p>
+							</div>
+						</div>
+						<div class="relative h-[179px] w-[147px] shrink-0 xl:h-[319px] xl:w-full" data-aos="fade" data-aos-delay="200">
+							<img class="size-full object-cover" src="assets/images/DSC_9801.jpg" alt="" />
+							<div class="absolute top-full translate-y-3 space-y-1">
+								<h4 class="max-xl:text-[14px]">Должность</h4>
+								<p class="text-[14px] font-normal normal-case opacity-75 xl:text-[18px]">Екатерина К.</p>
+							</div>
+						</div>
+						<div class="relative h-[178px] w-[136px] shrink-0 xl:h-[475px] xl:w-full" data-aos="fade" data-aos-delay="300">
+							<img class="size-full object-cover" src="assets/images/SPECTRUM_by_Kirich-1.jpg" alt="" />
+							<div class="absolute top-full translate-y-3 space-y-1">
+								<h4 class="max-xl:text-[14px]">Должность</h4>
+								<p class="text-[14px] font-normal normal-case opacity-75 xl:text-[18px]">Екатерина К.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="mb-4 flex flex-col gap-y-3 xl:mb-2">
+						<h3 class="w-max bg-[#F6EECC] pt-1.5 text-[22px] leading-[1.4] xl:pt-1 xl:leading-none" data-aos="fade">
+							Менеджеры <span class="whitespace-nowrap">по работе</span> <br class="xl:hidden" />
+							<span class="whitespace-nowrap">с инфлюенсерами</span>
+						</h3>
+						<p class="leading-[1.4] max-xl:text-[14px]" data-aos="fade" data-aos-delay="100">Устанавливают связи <span class="whitespace-nowrap">с блогерами</span> <span class="whitespace-nowrap">в соц сетях,</span> обеспечивая вашему бренду охват и вовлеченность</p>
+					</div>
+					<div class="flex grid-cols-4 gap-x-4 *:object-cover xl:grid">
+						<div class="relative size-[180px] shrink-0 xl:h-[340px] xl:w-full" data-aos="fade">
+							<img class="size-full object-cover" src="assets/images/DSC_0440-1.jpg" alt="" />
+							<div class="absolute top-full translate-y-3 space-y-1">
+								<h4 class="max-xl:text-[14px]">Должность</h4>
+								<p class="text-[14px] font-normal normal-case opacity-75 xl:text-[18px]">Екатерина К.</p>
+							</div>
+						</div>
+						<div class="relative h-[293px] w-[208px] shrink-0 xl:h-[479px] xl:w-full" data-aos="fade" data-aos-delay="100">
+							<img class="size-full object-cover" src="assets/images/DSC_0366-1.jpg" alt="" />
+							<div class="absolute top-full translate-y-3 space-y-1">
+								<h4 class="max-xl:text-[14px]">Должность</h4>
+								<p class="text-[14px] font-normal normal-case opacity-75 xl:text-[18px]">Екатерина К.</p>
+							</div>
+						</div>
+						<div class="relative h-[174px] w-[211px] shrink-0 xl:h-[280px] xl:w-full" data-aos="fade" data-aos-delay="200">
+							<img class="size-full object-cover" src="assets/images/SPECTRUM_by_Kirich-1.jpg" alt="" />
+							<div class="absolute top-full translate-y-3 space-y-1">
+								<h4 class="max-xl:text-[14px]">Должность</h4>
+								<p class="text-[14px] font-normal normal-case opacity-75 xl:text-[18px]">Екатерина К.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="bottom-0 right-4 self-end text-[22px] max-xl:!mt-[85px] xl:absolute xl:text-right" data-aos="fade">
+					И еще 150+ людей, <br />
+					знающих свое дело
+				</p>
+			</div>
+		</section>
+
+		<!--  -->
+		<section class="mb-[60px] px-4 2xl:container xl:mb-20 xl:px-5">
+			<div class="xl:max-w-[881px]">
+				<p class="mb-4 text-[24px] leading-[1.2] xl:mb-5 xl:text-[40px]" data-aos="fade">
+					Свяжитесь <span class="whitespace-nowrap">с нами,</span>, и вы обретёте надёжных союзников, которые будут стремиться <span class="whitespace-nowrap">к вашему</span> успеху и обеспечат всестороннюю поддержку <span class="whitespace-nowrap">на все</span> время сотрудничества
+				</p>
+				<p class="mb-9 text-[20px] font-normal normal-case text-black/75 xl:max-w-[675px]">С удовольствием обсудим, как мы можем помочь вам достичь ваших амбициозных целей и раскрыть полный потенциал вашего бренда</p>
+				<div class="flex flex-wrap gap-2.5">
+					<a class="group flex size-max shrink-0 items-center gap-x-1 text-nowrap border border-black pl-1 pr-1.5 text-sm uppercase duration-300 xl:hover:bg-black xl:hover:text-white" href="https://wa.me/79653636920">
+						<span class="mt-0.5">Для компаний</span>
+						<svg class="fill-black duration-300 xl:group-hover:fill-white" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4.8 13.5005L3.75 12.4505L10.95 5.25049H4.5V3.75049H13.5V12.7505H12V6.30049L4.8 13.5005Z" />
+						</svg>
+					</a>
+					<a class="group flex size-max shrink-0 items-center gap-x-1 text-nowrap bg-black pl-1 pr-1.5 text-sm uppercase text-white duration-300 xl:hover:bg-white xl:hover:text-black" href="https://wa.me/79653636920">
+						<span class="mt-0.5">Для блогеров</span>
+						<svg class="fill-white duration-300 xl:group-hover:fill-black" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4.8 13.5005L3.75 12.4505L10.95 5.25049H4.5V3.75049H13.5V12.7505H12V6.30049L4.8 13.5005Z" />
+						</svg>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer id="contacts" class="bg-[#0B0B0B] text-white">
+			<div class="flex flex-col px-4 pb-10 pt-20 2xl:container xl:px-5 xl:pb-7">
+				<div class="grid gap-y-12 xl:grid-cols-[33.6%_1fr_219px]">
+					<div class="space-y-6 xl:space-y-10" data-aos="fade">
+						<p class="text-[#6B6B6B]">Контакты</p>
+						<div class="space-y-6 *:space-y-2.5">
+							<div>
+								<p>Общие запросы и обращения</p>
+								<a class="group flex w-max shrink-0 gap-x-1 text-nowrap font-normal normal-case opacity-75" href="mailto:info@kirichproduction.com">
+									<p class="h-4 shrink-0 overflow-y-hidden">
+										<span class="block duration-300 md:group-hover:-translate-y-1/2">
+											<span>info@kirichproduction.com</span>
+											<br />
+											<span class="max-md:hidden">info@kirichproduction.com</span>
+										</span>
+									</p>
+								</a>
+							</div>
+							<div>
+								<p>Мероприятия</p>
+								<a class="group flex w-max shrink-0 gap-x-1 text-nowrap font-normal normal-case opacity-75" href="mailto:event@kirichproduction.com">
+									<p class="h-4 shrink-0 overflow-y-hidden">
+										<span class="block duration-300 md:group-hover:-translate-y-1/2">
+											<span>event@kirichproduction.com</span>
+											<br />
+											<span class="max-md:hidden">event@kirichproduction.com</span>
+										</span>
+									</p>
+								</a>
+							</div>
+							<div>
+								<p>ПИАР, СМИ, Партнёрам</p>
+								<a class="group flex w-max shrink-0 gap-x-1 text-nowrap font-normal normal-case opacity-75" href="mailto:pr@kirichproduction.com">
+									<p class="h-4 shrink-0 overflow-y-hidden">
+										<span class="block duration-300 md:group-hover:-translate-y-1/2">
+											<span>pr@kirichproduction.com</span>
+											<br />
+											<span class="max-md:hidden">pr@kirichproduction.com</span>
+										</span>
+									</p>
+								</a>
+							</div>
+							<div>
+								<p>Стратегия и управление</p>
+								<a class="group flex w-max shrink-0 gap-x-1 text-nowrap font-normal normal-case opacity-75" href="mailto:ead@kirichproduction.com">
+									<p class="h-4 shrink-0 overflow-y-hidden">
+										<span class="block duration-300 md:group-hover:-translate-y-1/2">
+											<span>ead@kirichproduction.com</span>
+											<br />
+											<span class="max-md:hidden">ead@kirichproduction.com</span>
+										</span>
+									</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="space-y-6 xl:space-y-10" data-aos="fade">
+						<p class="text-[#6B6B6B]">Соц сети</p>
+						<div class="space-y-3">
+							<a class="group flex w-max shrink-0 items-center gap-x-2.5 text-nowrap" href="https://www.instagram.com/kirich_production/" target="_blank" rel="noopener noreferrer">
+								<img src="assets/images/inst.svg" class="size-[14px] invert" alt="Instagram" />
+								<p class="h-4 shrink-0 overflow-y-hidden">
+									<span class="block duration-300 md:group-hover:-translate-y-1/2">
+										<span>Instagram</span>
+										<br />
+										<span class="max-md:hidden">Instagram</span>
+									</span>
+								</p>
+							</a>
+							<a class="group flex w-max shrink-0 items-center gap-x-2.5 text-nowrap" href="https://t.me/KateKirich" target="_blank" rel="noopener noreferrer">
+								<img src="assets/images/tg.svg" class="size-[14px] invert" alt="Telegram" />
+								<p class="h-4 shrink-0 overflow-y-hidden">
+									<span class="block duration-300 md:group-hover:-translate-y-1/2">
+										<span>Telegram</span>
+										<br />
+										<span class="max-md:hidden">Telegram</span>
+									</span>
+								</p>
+							</a>
+							<a class="group flex w-max shrink-0 items-center gap-x-2.5 text-nowrap" href="https://wa.me/79653636920" target="_blank" rel="noopener noreferrer">
+								<img src="assets/images/whatsup.svg" class="size-[14px] invert" alt="Wathsup" />
+								<p class="h-4 shrink-0 overflow-y-hidden">
+									<span class="block duration-300 md:group-hover:-translate-y-1/2">
+										<span>WhatsApp</span>
+										<br />
+										<span class="max-md:hidden">WhatsApp</span>
+									</span>
+								</p>
+							</a>
+						</div>
+					</div>
+					<div class="space-y-6 xl:space-y-10" data-aos="fade">
+						<p class="text-[#6B6B6B]">Навигация</p>
+						<div class="space-y-3">
+							<a class="group flex w-max shrink-0 gap-x-1 text-nowrap" href="index.html">
+								<p class="h-4 shrink-0 overflow-y-hidden">
+									<span class="block duration-300 md:group-hover:-translate-y-1/2">
+										<span>Главная</span>
+										<br />
+										<span class="max-md:hidden">Главная</span>
+									</span>
+								</p>
+							</a>
+							<a class="group flex w-max shrink-0 gap-x-1 text-nowrap opacity-50" href="company.html">
+								<p class="h-4 shrink-0 overflow-y-hidden">
+									<span class="block duration-300 md:group-hover:-translate-y-1/2">
+										<span>Компания</span>
+										<br />
+										<span class="max-md:hidden">Компания</span>
+									</span>
+								</p>
+							</a>
+							<a class="group flex w-max shrink-0 gap-x-1 text-nowrap" href="services.html">
+								<p class="h-4 shrink-0 overflow-y-hidden">
+									<span class="block duration-300 md:group-hover:-translate-y-1/2">
+										<span>Услуги</span>
+										<br />
+										<span class="max-md:hidden">Услуги</span>
+									</span>
+								</p>
+							</a>
+							<a class="group flex w-max shrink-0 gap-x-1 text-nowrap" href="cases.html">
+								<p class="h-4 shrink-0 overflow-y-hidden">
+									<span class="block duration-300 md:group-hover:-translate-y-1/2">
+										<span>Кейсы</span>
+										<br />
+										<span class="max-md:hidden">Кейсы</span>
+									</span>
+								</p>
+							</a>
+							<a class="group flex w-max shrink-0 gap-x-1 text-nowrap" href="our-brand.html">
+								<p class="h-4 shrink-0 overflow-y-hidden">
+									<span class="block duration-300 md:group-hover:-translate-y-1/2">
+										<span>Наш бренд</span>
+										<br />
+										<span class="max-md:hidden">Наш бренд</span>
+									</span>
+								</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="spotlight-container relative my-[52px] overflow-hidden xl:mb-7 xl:mt-16">
+					<svg class="spotlight-svg h-auto w-full" viewBox="0 0 1413 115" fill="none" xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
+						<defs>
+							<mask id="mask">
+								<rect width="100%" height="100%" fill="black" />
+								<circle id="spotlight" cx="0" cy="0" r="150" fill="white" class="bg-opacity-50 blur-[20px]" />
+							</mask>
+						</defs>
+						<g>
+							<path
+								d="M1411.73 5.21289V3.96289H1410.48H1393.55H1392.3V5.21289V46.4236C1392.3 59.1517 1392.5 73.3086 1392.9 88.8935C1386.66 75.8202 1379.98 62.3566 1372.88 48.5026L1372.88 48.5019L1350.36 4.64196L1350.01 3.96289H1349.25H1323.79H1322.54V5.21289V110.006V111.256H1323.79H1340.86H1342.11V110.006V68.7951C1342.11 54.6713 1341.88 40.5475 1341.42 26.4237C1347.64 39.4661 1354.3 52.8969 1361.39 66.7161L1361.39 66.7197L1384.05 110.58L1384.4 111.256H1385.16H1410.48H1411.73V110.006V5.21289Z"
+								stroke="white"
+								stroke-width="2.5"
+							/>
+							<path
+								d="M1222.74 16.8871L1222.74 16.8876C1213.85 26.8919 1209.47 40.5149 1209.47 57.6041C1209.47 74.6941 1213.85 88.3629 1222.74 98.4632L1222.74 98.4632L1222.74 98.4731C1231.75 108.491 1243.98 113.458 1259.29 113.458C1274.6 113.458 1286.79 108.491 1295.7 98.4678C1304.69 88.3677 1309.11 74.6972 1309.11 57.6041C1309.11 40.5144 1304.69 26.8911 1295.7 16.8875C1286.79 6.76757 1274.6 1.75 1259.29 1.75C1243.98 1.75 1231.75 6.76904 1222.74 16.8871ZM1280.38 29.9637L1280.39 29.9723C1285.66 36.6523 1288.36 45.8167 1288.36 57.6041C1288.36 69.3916 1285.66 78.556 1280.39 85.2359L1280.38 85.2446C1275.24 91.8856 1268.25 95.2099 1259.29 95.2099C1250.33 95.2099 1243.3 91.8862 1238.05 85.24C1232.88 78.5597 1230.22 69.3934 1230.22 57.6041C1230.22 45.8148 1232.88 36.6484 1238.05 29.9681C1243.3 23.3221 1250.33 19.9984 1259.29 19.9984C1268.25 19.9984 1275.24 23.3227 1280.38 29.9637Z"
+								stroke="white"
+								stroke-width="2.5"
+							/>
+							<path d="M1196.1 5.21289V3.96289H1194.85H1177.18H1175.93V5.21289V110.006V111.256H1177.18H1194.85H1196.1V110.006V5.21289Z" stroke="white" stroke-width="2.5" />
+							<path d="M1169.19 5.21289V3.96289H1167.94H1081.55H1080.3V5.21289V20.5197V21.7697H1081.55H1114.74V110.006V111.256H1115.99H1133.5H1134.75V110.006V21.7697H1167.94H1169.19V20.5197V5.21289Z" stroke="white" stroke-width="2.5" />
+							<path
+								d="M1078.93 42.3699H1080.23L1080.18 41.0656C1079.67 29.4827 1075.48 19.987 1067.56 12.6785C1059.63 5.35851 1049.2 1.75 1036.39 1.75C1021.56 1.75 1009.72 6.727 1001.01 16.7512L1001.01 16.7512L1001 16.7566C992.413 26.7622 988.191 40.4291 988.191 57.6041C988.191 74.7759 992.362 88.4406 1000.85 98.4461L1000.86 98.4516C1009.47 108.479 1021.21 113.458 1035.95 113.458C1048.74 113.458 1059.17 110.005 1067.1 102.989L1067.1 102.983C1075.03 95.8664 1079.51 86.0823 1080.61 73.7582L1080.74 72.3969H1079.37H1061.27H1060.18L1060.03 73.4772C1059.08 80.4056 1056.44 85.7045 1052.19 89.4924L1052.19 89.4923L1052.18 89.5015C1048.03 93.2803 1042.66 95.2099 1035.95 95.2099C1027.61 95.2099 1021.07 91.9579 1016.21 85.42C1011.41 78.7373 1008.94 69.5098 1008.94 57.6041C1008.94 45.6967 1011.46 36.524 1016.35 29.9436L1016.35 29.9436L1016.35 29.9368C1021.21 23.3044 1027.85 19.9984 1036.39 19.9984C1043.1 19.9984 1048.42 21.9281 1052.47 25.6973L1052.48 25.7073L1052.49 25.717C1056.63 29.3998 1059.12 34.5393 1059.88 41.2598L1060 42.3699H1061.12H1078.93Z"
+								stroke="white"
+								stroke-width="2.5"
+							/>
+							<path
+								d="M956.783 3.96289H955.533V5.21289V69.8253C955.533 78.3923 953.605 84.6734 949.952 88.8745C946.315 93.0572 941.1 95.2151 934.117 95.2151C927.133 95.2151 921.918 93.0572 918.281 88.8745C914.628 84.6734 912.701 78.3923 912.701 69.8253V5.21289V3.96289H911.451H893.789H892.539V5.21289V70.4141C892.539 84.162 896.078 94.8717 903.343 102.341C910.609 109.812 920.932 113.463 934.117 113.463C947.299 113.463 957.577 109.813 964.747 102.337C972.009 94.8683 975.547 84.1598 975.547 70.4141V5.21289V3.96289H974.297H956.783Z"
+								stroke="white"
+								stroke-width="2.5"
+							/>
+							<path
+								d="M789.141 110.006V111.256H790.391H823.948C841.721 111.256 855.61 106.685 865.43 97.372L865.435 97.3674C875.261 87.9462 880.096 74.6305 880.096 57.6093C880.096 40.5906 875.262 27.3212 865.433 17.9966C855.614 8.58352 841.723 3.96289 823.948 3.96289H790.391H789.141V5.21289V110.006ZM809.155 93.4489V21.7697H823.653C835.774 21.7697 844.635 24.8108 850.475 30.6742C856.316 36.5386 859.346 45.4375 859.346 57.6093C859.346 69.7811 856.316 78.6801 850.475 84.5444C844.635 90.4078 835.774 93.4489 823.653 93.4489H809.155Z"
+								stroke="white"
+								stroke-width="2.5"
+							/>
+							<path
+								d="M689.342 16.8871L689.342 16.8876C680.449 26.8919 676.074 40.5149 676.074 57.6041C676.074 74.6941 680.449 88.3629 689.338 98.4632L689.338 98.4632L689.347 98.4731C698.353 108.491 710.585 113.458 725.894 113.458C741.202 113.458 753.389 108.491 762.299 98.4678C771.288 88.3677 775.714 74.6972 775.714 57.6041C775.714 40.5144 771.289 26.8911 762.299 16.8875C753.391 6.76758 741.204 1.75 725.894 1.75C710.581 1.75 698.347 6.76904 689.342 16.8871ZM746.983 29.9637L746.99 29.9723C752.258 36.6523 754.963 45.8167 754.963 57.6041C754.963 69.3916 752.258 78.556 746.99 85.2359L746.983 85.2446C741.838 91.8856 734.855 95.2099 725.894 95.2099C716.935 95.2099 709.898 91.8862 704.654 85.2401C699.481 78.5598 696.825 69.3935 696.825 57.6041C696.825 45.8147 699.481 36.6483 704.654 29.968C709.898 23.322 716.935 19.9984 725.894 19.9984C734.855 19.9984 741.838 23.3227 746.983 29.9637Z"
+								stroke="white"
+								stroke-width="2.5"
+							/>
+							<path
+								d="M591.215 110.006V111.256H592.465H610.127H611.377V110.006V69.162H625.286C630.432 69.162 634.125 70.2612 636.562 72.263L636.57 72.2699L636.578 72.2765C639.143 74.3108 641.497 78.1582 643.53 84.0624C643.531 84.064 643.532 84.0656 643.532 84.0672L652.36 110.403L652.646 111.256H653.545H672.826H674.609L674.001 109.579L663.258 80.0008C663.258 79.9995 663.257 79.9982 663.257 79.9968C660.893 73.3983 658.582 68.5802 656.294 65.6679C654.569 63.4729 652.389 61.7286 649.776 60.4258C654.63 58.6866 658.587 55.7926 661.607 51.7394C665.325 46.8825 667.158 41.0152 667.158 34.2075C667.158 24.2531 663.933 16.5966 657.328 11.4738C650.784 6.3978 641.112 3.96289 628.524 3.96289H592.465H591.215V5.21289V110.006ZM646.849 35.9737V35.9849L646.849 35.996C646.943 41.2108 645.417 45.1587 642.393 48.0087C639.386 50.7451 634.557 52.2382 627.641 52.2382H611.377V21.0338H626.611C633.653 21.0338 638.706 22.3664 641.975 24.8296C645.178 27.2426 646.849 30.8799 646.849 35.9737Z"
+								stroke="white"
+								stroke-width="2.5"
+							/>
+							<path
+								d="M502.027 110.006V111.256H503.277H520.939H522.189V110.006V71.9584H541.103C553.364 71.9584 562.98 68.9669 569.761 62.8025C576.539 56.6408 579.884 48.2857 579.884 37.8871C579.884 27.5823 576.536 19.278 569.761 13.1188C562.98 6.9544 553.364 3.96289 541.103 3.96289H503.277H502.027V5.21289V110.006ZM522.189 54.5931V21.3282H539.042C546.064 21.3282 551.097 22.7878 554.361 25.4928C557.58 28.1606 559.281 32.2117 559.281 37.8871C559.281 43.6149 557.578 47.7037 554.357 50.3949C551.093 53.1221 546.062 54.5931 539.042 54.5931H522.189Z"
+								stroke="white"
+								stroke-width="2.5"
+							/>
+							<path d="M450.424 5.21289V3.96289H449.174H431.66H430.41V5.21289V46.6454H384.634V5.21289V3.96289H383.384H365.723H364.473V5.21289V110.006V111.256H365.723H383.384H384.634V110.006V64.4522H430.41V110.006V111.256H431.66H449.174H450.424V110.006V5.21289Z" stroke="white" stroke-width="2.5" />
+							<path
+								d="M348.752 42.3699H350.057L350 41.0656C349.497 29.4827 345.301 19.9871 337.383 12.6785C329.453 5.35851 319.022 1.75 306.216 1.75C291.384 1.75 279.54 6.727 270.832 16.7512L270.832 16.7512L270.828 16.7566C262.237 26.7622 258.016 40.4291 258.016 57.6041C258.016 74.7759 262.186 88.4406 270.676 98.4461L270.68 98.4516C279.29 108.479 291.038 113.458 305.775 113.458C318.566 113.458 328.991 110.005 336.922 102.989L336.929 102.983C344.859 95.8664 349.336 86.0823 350.438 73.7582L350.56 72.3969H349.193H331.09H330L329.852 73.4772C328.902 80.4056 326.266 85.7045 322.016 89.4924L322.016 89.4923L322.006 89.5015C317.858 93.2803 312.485 95.2099 305.775 95.2099C297.431 95.2099 290.892 91.9579 286.032 85.42C281.235 78.7373 278.766 69.5098 278.766 57.6041C278.766 45.6967 281.285 36.524 286.173 29.9436L286.173 29.9436L286.178 29.9368C291.035 23.3044 297.67 19.9984 306.216 19.9984C312.927 19.9984 318.245 21.9281 322.29 25.6973L322.301 25.7073L322.312 25.717C326.455 29.3998 328.943 34.5393 329.701 41.2598L329.826 42.3699H330.943H348.752Z"
+								stroke="white"
+								stroke-width="2.5"
+							/>
+							<path d="M244.63 5.21289V3.96289H243.38H225.719H224.469V5.21289V110.006V111.256H225.719H243.38H244.63V110.006V5.21289Z" stroke="white" stroke-width="2.5" />
+							<path
+								d="M131.258 110.006V111.256H132.508H150.17H151.42V110.006V69.162H165.329C170.475 69.162 174.168 70.2612 176.605 72.263L176.613 72.2699L176.621 72.2765C179.186 74.3108 181.54 78.1582 183.573 84.0624C183.574 84.064 183.575 84.0656 183.575 84.0672L192.403 110.403L192.689 111.256H193.588H212.869H214.652L214.044 109.579L203.301 80.0008C203.301 80 203.301 79.9992 203.3 79.9984C200.936 73.3991 198.625 68.5804 196.337 65.6679C194.612 63.4729 192.432 61.7286 189.819 60.4258C194.673 58.6866 198.63 55.7926 201.65 51.7394C205.368 46.8825 207.201 41.0152 207.201 34.2075C207.201 24.2531 203.976 16.5966 197.371 11.4738C190.826 6.3978 181.155 3.96289 168.567 3.96289H132.508H131.258V5.21289V110.006ZM186.892 35.9737V35.9849L186.892 35.996C186.986 41.2107 185.46 45.1586 182.436 48.0086C179.429 50.745 174.6 52.2382 167.684 52.2382H151.42V21.0338H166.654C173.696 21.0338 178.749 22.3664 182.018 24.8296C185.221 27.2426 186.892 30.8799 186.892 35.9737Z"
+								stroke="white"
+								stroke-width="2.5"
+							/>
+							<path d="M110.81 5.21289V3.96289H109.56H91.8984H90.6484V5.21289V110.006V111.256H91.8984H109.56H110.81V110.006V5.21289Z" stroke="white" stroke-width="2.5" />
+							<path
+								d="M81.3657 6.02707L83.1376 3.96289H80.4172H59.2231H58.6317L58.2566 4.42018L21.9117 48.733V5.21289V3.96289H20.6617H3H1.75V5.21289V110.006V111.256H3H20.6617H21.9117V110.006V62.7129L60.4556 110.788L60.8309 111.256H61.4309H84.2439H86.9467L85.1964 109.196L39.2314 55.1113L81.3657 6.02707Z"
+								stroke="white"
+								stroke-width="2.5"
+							/>
+						</g>
+					</svg>
+				</div>
+				<div class="grid gap-y-10 text-[12px] text-[#6B6B6B] max-xl:flex-col xl:grid-cols-[33.6%_1fr_219px] xl:items-end">
+					<div class="space-y-3 xl:order-1">
+						<a class="group flex w-max shrink-0 gap-x-1 text-nowrap" href="https://Kirichproduction.com/policy/">
+							<p class="h-3 shrink-0 overflow-y-hidden">
+								<span class="block duration-300 md:group-hover:-translate-y-1/2">
+									<span>Политика конфиденциальности</span>
+									<br />
+									<span class="max-md:hidden">Политика конфиденциальности</span>
+								</span>
+							</p>
+						</a>
+						<a class="group flex w-max shrink-0 gap-x-1 text-nowrap" href="null">
+							<p class="h-3 shrink-0 overflow-y-hidden">
+								<span class="block duration-300 md:group-hover:-translate-y-1/2">
+									<span>Договор офёрты</span>
+									<br />
+									<span class="max-md:hidden">Договор офёрты</span>
+								</span>
+							</p>
+						</a>
+					</div>
+					<p class="">©2025 Kirich Production. Все права защищены</p>
+					<p class="">Inst* — запрещенная в российской федерации организация</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="modules/burgerMenu.js"></script>
+		<script src="modules/countdown.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({ offset: 60 });
+		</script>
+		<script src="modules/spotlight.js"></script>
+	</body>
+</html>
